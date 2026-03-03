@@ -117,7 +117,9 @@ public:
     static const Instruction NOP;
     static const Instruction UNKNOWN_INST;
 
-    enum Type { R, I, S, B, U, J, ZICSR, AMO, UNKNOWN };
+    enum Type { R, I, S, B, U, J, ZICSR, AMO, 
+                CR, CI, CSS, CIW, CL, CS, CA, CB, CJ,
+                UNKNOWN };
 
     /** Modified encoding to enable pseudoinstructions. */
     enum class Modifier {
